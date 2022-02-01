@@ -14,6 +14,8 @@ process foo {
 }
 
 process bar {
+    executor 'lsf'
+    clusterOptions "$params.clusterOptions"
     conda '/groups/scicompsoft/home/ackermand/Programming/multiresolution-mesh-creator/multiresolution_mesh_creator.yml'
     publishDir 'data/test/output'
     input:
