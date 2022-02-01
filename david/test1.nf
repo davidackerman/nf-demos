@@ -2,6 +2,7 @@
 nextflow.enable.dsl=2
 
 process foo {
+    lsf_opts "$params.lsf_opts"
     publishDir 'data/test/output'
     output:
       path 'foo.txt'
