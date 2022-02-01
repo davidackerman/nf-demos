@@ -3,7 +3,7 @@ nextflow.enable.dsl=2
 
 process foo {
     executor 'lsf'
-    clusterOptions "$params.lsf_opts"
+    clusterOptions "$params.clusterOptions"
     publishDir 'data/test/output'
     output:
       path 'foo.txt'
