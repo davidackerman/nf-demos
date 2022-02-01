@@ -32,6 +32,6 @@ process bar {
 
 workflow {
   foo()
-  data = channel.fromPath('data/test/baz.txt')
+  data = channel.fromPath('work/baz.txt')
   bar(data)
 }
