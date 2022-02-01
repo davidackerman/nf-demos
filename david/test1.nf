@@ -4,7 +4,7 @@ nextflow.enable.dsl=2
 process foo {
     executor 'lsf'
     clusterOptions "$params.clusterOptions"
-    publishDir 'data/test/output'
+    publishDir 'output'
     output:
       path 'foo.txt'
     script:
@@ -17,7 +17,7 @@ process bar {
     executor 'lsf'
     clusterOptions "$params.clusterOptions"
     conda '/groups/scicompsoft/home/ackermand/Programming/multiresolution-mesh-creator/multiresolution_mesh_creator.yml'
-    publishDir 'data/test/output'
+    publishDir 'output'
     input:
       path x
     output:
