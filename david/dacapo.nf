@@ -4,6 +4,7 @@ nextflow.enable.dsl=2
 process dacapo {
     executor 'lsf'
     clusterOptions "$params.clusterOptions"
+    cpus 10
     conda '/groups/scicompsoft/home/ackermand/miniconda3/envs/dacapo'
     //publishDir 'output'
     //input:
