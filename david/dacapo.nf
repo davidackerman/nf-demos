@@ -17,5 +17,5 @@ process dacapo {
 }
 
 workflow {
-  bar(dacapo)
+  dacapo()
 }
