@@ -2,8 +2,7 @@
 nextflow.enable.dsl=2
 
 process dacapo {
-    clusterOptions "$params.clusterOptions"
-    cpus 5
+    cpus params.cpus
     conda '/groups/scicompsoft/home/ackermand/miniconda3/envs/dacapo'
     script:
       """
