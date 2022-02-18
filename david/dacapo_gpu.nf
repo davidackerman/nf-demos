@@ -5,7 +5,7 @@ process dacapo {
     executor 'lsf'
     clusterOptions "$params.clusterOptions"
     cpus 5
-    gpus 3
+
     conda '/groups/scicompsoft/home/ackermand/miniconda3/envs/dacapo'
     //publishDir 'output'
     //input:
